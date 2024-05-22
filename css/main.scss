@@ -331,7 +331,10 @@ header .header-content {
 }
 
 #team {
-	img { background-color: $pic-bg-color;}
+	img {
+		background-color: $pic-bg-color;
+		object-fit: cover;
+	}
 	a, span.no_link {
 		img {
 			max-width: 100%;
