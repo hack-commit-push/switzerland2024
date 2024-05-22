@@ -1,0 +1,395 @@
+---
+---
+
+@charset "utf-8";
+
+$spacing-unit:     	3vw;
+$theme-primary: 	#ac2217;
+$secondary-color:	#1E3A7F;
+$theme-dark: 		#222;
+$text-color:		white;
+$border-color:		white;
+$pic-bg-color:		white;
+
+$collapse-navbar-breakpoint: 1350px;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "base"
+;
+
+html {
+	// quick fix for background color when
+	// the project table overflows
+	background-color: $secondary-color;
+}
+
+body > * {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+abbr[title] {
+	border: 0;
+	text-decoration: none;
+	cursor: inherit;
+}
+
+a, button {
+	&, &:hover, &:active, &:focus, &:visited {
+		outline: 0;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-tap-highlight-color: transparent;
+		text-decoration: none;
+		border: 0;
+	}
+
+	&:not(#logo-link) {
+		color: $text-color !important;
+	}
+}
+
+.text-primary { color: $text-color;}
+
+hr {
+	border-color: $border-color;
+
+	h2 + & {
+		margin-bottom: 2vh;
+	}
+}
+
+.table td.fit,
+.table th.fit {
+	width: 1%;
+	white-space: nowrap;
+}
+
+section {
+	&, & .text-muted {
+		color: $text-color;
+	}
+
+	padding: 10vh 4vh;
+	display: flex;
+	min-height: 100%;
+	align-items: center !important;
+}
+
+body>section:nth-child(odd) {
+	background-color: $theme-primary;
+	color: $text-color;
+}
+
+body>section:nth-child(even) {
+	background-color: $secondary-color;
+}
+
+#mainNav {
+	& {
+		border: none;
+		background-color: transparent;
+		color: $text-color;
+	}
+
+	a {
+		& {
+			color: $text-color !important;
+		}
+
+		&:not(#logo-link):focus {
+			border-bottom: 2px solid $border-color !important;
+		}
+
+		&:hover {
+			color: $secondary-color;
+		}
+
+	}
+
+	#nav-twitter, #nav-github, #nav-linkedin {
+		font-size: 16pt;
+	}
+
+	#bs-example-navbar-collapse-1 {
+		border: none;
+		text-align: right;
+
+		&.in,&.collapsing{
+			background-color: darken(rgba($theme-primary, .9), 10%);
+		}
+
+		ul {
+			margin: 0;
+			margin-bottom: 10px;
+			li {
+				height: 30px;
+			}
+		}
+
+		a:focus {
+			border-bottom: none !important;
+		}
+	}
+}
+
+header {
+	display: flex;
+	min-height: 100%;
+	align-items: center !important;
+
+	#host {
+		position: absolute;
+		bottom: 0;
+		right: 2vw;
+
+		#host-content {
+			display: flex;
+			margin-bottom: 1vh;
+			align-items: center;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-right: 0.25vw;
+
+				p {
+					text-align: right;
+					margin-bottom: 0;
+				}
+			}
+
+			#host-logo {
+				height: 120px;
+			}
+		}
+
+	}
+}
+
+header .header-content {
+	& {
+		padding: 0;
+	}
+
+	& .header-content-inner {
+		& {
+			width: 100%;
+			max-width: inherit;
+		}
+
+		* {
+			text-transform: uppercase;
+		}
+
+		h1 {
+			font-size: 3.5 / 3 * $spacing-unit !important;
+			font-weight: normal;
+			padding-bottom: $spacing-unit;
+			text-transform: inherit;
+		}
+
+		#virtual {
+			text-transform: none;
+			display: inline-block;
+			transform: rotate(-30deg);
+			transform-origin: bottom center;
+			margin-right: -3%;
+		}
+
+		h2 {
+			font-size: $spacing-unit;
+		}
+
+		h3 {
+			font-size: $spacing-unit * 3/5;
+		}
+
+		iframe {
+			width: 49vw;
+			height: 27.5vw;
+		}
+
+		.btn {
+			color: white;
+			border-radius: 0;
+		}
+
+		.btn-primary {
+			border-color: $theme-primary;
+			background-color: $theme-primary;
+		}
+
+		.btn-secondary {
+			background-color: transparent;
+			border: 2px solid $border-color;
+		}
+	}
+}
+
+#about {
+	.btn {
+		background-color: transparent;
+		border-radius: 0;
+		color: white;
+		border: 2px solid $border-color;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+#venue {
+	a {
+		color: white !important;
+
+		&.localization {
+			text-decoration: underline;
+		}
+	}
+	iframe, dl {
+		text-align: left;
+		width: 100% !important;
+	}
+	iframe { box-sizing: content-box;}
+	dl {
+		font-size: 16px;
+	}
+}
+
+#agenda {
+	.row > div {
+		margin-bottom: 3vh;
+	}
+}
+
+#projects {
+	a { text-decoration: underline; }
+
+	.project-presentation { font-size: 1.1em;}
+
+	.contribution {
+		ul {
+            width: max-content;
+			li {
+				padding: 6px;
+				background-color: $secondary-color;
+			}
+		}
+	}
+}
+
+#team, #sponsors {
+
+	.grid_item {
+		text-align: center;
+		margin-bottom: 2vh;
+		height: 140px;
+
+		.short_desc {
+			display: none;
+			color: $text-color;
+		}
+
+		a, span.no_link {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			min-height: 70px;
+		}
+
+		a:hover, span.no_link:hover {
+			img {
+				opacity: 0.1;
+			}
+
+			.short_desc {
+				position: absolute;
+	    		top: 50%;
+				left: 50%;
+	    		transform: translate(-50%, -50%);
+	    		display: inline;
+
+	    		span { display: inline;}
+	    		.grid_item_name {
+	    			display: block;
+	    			font-weight: bold;
+	    		}
+			}
+		}
+	}
+}
+
+#sponsors {
+	img {
+		width: 140px;
+		height: max-content;
+		align-self: center;
+	}
+}
+
+#team {
+	img { background-color: $pic-bg-color;}
+	a, span.no_link {
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 576px) {
+
+	header .header-content {
+		& .header-content-inner {
+			.btn-primary {
+				border: 2px solid $theme-primary;
+				margin-right: $spacing-unit / 2;
+			}
+		}
+	}
+}
+
+// courtesy of https://coderwall.com/p/wpjw4w/change-the-bootstrap-navbar-breakpoint
+@media (max-width: $collapse-navbar-breakpoint) {
+    .navbar-header {
+        float: none;
+        margin-right: -15px !important;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+
+	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+		max-height: 400px;
+	}
+}

@@ -1,0 +1,111 @@
+<section id="projects">
+    <div class="container">
+        <h2 class="section-heading text-center">Trainings</h2>
+        <hr class="light">
+        <p>There will be optional beginner-friendly trainings in the first two hours of the event. You can then work on one the project listed below afterwards.</p>
+        {% assign trainings = site.data.trainings | sort_natural: 'topic' %}
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th>Topic</th>
+                    <th>Trainer(s)</th>
+                    <th>Description</th>
+                </tr>
+                {% for training in trainings %}
+                <tr>
+                    <td><a href="{{training.url}}" rel="noopener" target="_blank">{{training.topic | replace: ' ', '&nbsp;'}}
+                        <i
+                                class="fa fa-external-link" aria-hidden="true"></i></a></td>
+                    <td>
+                        {% for trainer in training.trainers %}
+                        {% capture trainer_languages %}({{ trainer.spoken_languages | join: ", " | replace: ' ', '&nbsp;' |
+                        replace: ',&nbsp;', ', '}}){% endcapture %}
+                        {% if trainer.profile_url %}
+                        <a rel="noopener" target="_blank" href="{{trainer.profile_url}}">{{trainer.name}} <i
+                                class="fa fa-external-link" aria-hidden="true"></i></a> {{trainer_languages}}
+                        {% else %}
+                        {{ trainer.name }} {{trainer_languages}}
+                        {% endif %}
+                        {% if forloop.last == false %}<br/>{% endif %}
+                        {% endfor %}
+                    </td>
+                    <td>{{training.description}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <hr class="light">
+
+        <h2 class="section-heading text-center">Projects</h2>
+        <hr class="light">
+        {% assign projects = site.data.projects | sort_natural: 'name' %}
+        {% if projects.size == 0 %}
+        <h3 class="text-center">To be announced</h3>
+        {% else %}
+        <p>The following list of projects is being regularly updated. <a href="#projects">Bookmark it!</a></p>
+        {% assign description_count = 0 %}
+        {% assign contribution_count = 0 %}
+        {% for project in projects %}
+        {% if project.description %}
+        {% assign description_count = description_count|plus:1 %}
+        {% endif %}
+        {% if project.contributions %}
+        {% assign contribution_count = contribution_count|plus:1 %}
+        {% endif %}
+        {% endfor %}
+        {% if contribution_count > 0 %}
+        {% comment %} hide descriptions if we have at least 1 listed contribution {% endcomment %}
+        {% assign description_count = 0 %}
+        {% endif %}
+        <table class="table">
+            <tr>
+                <th class="fit">Name</th>
+                <th class="fit text-center">Tutorial</th>
+                <th class="{% if description_count > 0 %}fit text-right{% endif %}">Leads (+ spoken
+                    languages)
+                </th>
+                {% if description_count > 0 %}
+                <th>Description</th>
+                {% endif %}
+                {% if contribution_count > 0 %}
+                <th>Contributions</th>
+                {% endif %}
+            </tr>
+            {% for project in projects %}
+            <tr>
+                <td class="fit" rowspan="{{rowspan}}"><a href="{{project.url}}" rel="noopener" target="_blank">{{project.name
+                    | replace: ' ', '&nbsp;'}} <i class="fa fa-external-link" aria-hidden="true"></i></a></td>
+                <td class="fit text-center">{% if project.presentation %} <a rel="noopener" target="_blank"
+                                                                             href="{{project.presentation.link}}"><i
+                        class="fa fa-{{project.presentation.icon}} project-presentation" aria-hidden="true"></i></a>{%
+                    endif %}
+                </td>
+                <td class="{% if description_count > 0 %}fit text-right{% endif %}">
+                    {% for lead in project.leads %}
+                    {% capture lead_languages %}({{ lead.spoken_languages | join: ", " | replace: ' ', '&nbsp;' |
+                    replace: ',&nbsp;', ', '}}){% endcapture %}
+                    {% if lead.profile_url %}
+                    <a rel="noopener" target="_blank" href="{{lead.profile_url}}">{{lead.name}} <i
+                            class="fa fa-external-link" aria-hidden="true"></i></a> {{lead_languages}}
+                    {% else %}
+                    {{ lead.name }} {{lead_languages}}
+                    {% endif %}
+                    {% if forloop.last == false %}<br/>{% endif %}
+                    {% endfor %}
+                </td>
+                {% if description_count > 0 %}
+                <td>{{project.description}}</td>
+                {% endif %}
+                {% if contribution_count > 0 %}
+                <td class="contribution"><ul class="list-group list-group-flush">
+                {% for contribution in project.contributions %}
+                    <li class="list-group-item"><a rel="noopener" target="_blank" href="{{contribution}}">{{contribution | replace_first: "https://github.com", ""}} <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                {% endfor %}
+                </ul></td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+    </div>
+</section>

@@ -1,0 +1,21 @@
+<div class="row justify-content-start align-items-center">
+	{% if include.sponsors.size == 0 %}
+		<h3 class="text-center">To be announced</h3>
+	{% else %}
+    {% for sponsor in include.sponsors %}
+	    {% assign mod = forloop.index0 | modulo:2 %}
+		{% if mod == 0 %}
+	<div class="grid_item col-xs-12 col-sm-6 col-sm-offset-{{include.left-offset|default:0}}">
+		{% else %}
+	<div class="grid_item col-xs-12 col-sm-6">
+		{% endif %}
+		<a href="{{sponsor.url|replace:'|SITE_EMAIL|',site.email}}" rel="noopener" target="_blank">
+			<img class="wow bounceIn" alt="{{sponsor.name}}" title="{{sponsor.name}}" src="img/{{sponsor.picture}}" />
+			<span class="short_desc">
+				<span class="grid_item_name">{{sponsor.name}}</span>
+			</span>
+		</a>
+	</div>
+	{% endfor %}
+	{% endif %}
+</div>

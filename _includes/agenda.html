@@ -1,0 +1,26 @@
+<section id="agenda">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="section-heading">Agenda (time in <strong><a href="https://time.is/UTC+1" rel="noopener" target="_blank">UTC+1 <i class="fa fa-external-link" aria-hidden="true"></i></a></strong>)</h2>
+                <hr class="primary">
+                {% if site.data.agenda.size == 0 %}
+                <p>To be announced</p>
+                {% endif %}
+            </div>
+        </div>
+        {% if site.data.agenda.size > 0 %}
+        <div class="row">
+            {% for agendaItem in site.data.agenda %}
+            <div class="col-sm-12 text-center">
+                <div class="service-box">
+                    <i class="fa fa-3x fa-{{agendaItem.icon}} wow bounceIn text-primary"></i>
+                    <h3>{{agendaItem.start}} to {{agendaItem.end}}</h3>
+                    <p class="text-muted">{{agendaItem.description}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>

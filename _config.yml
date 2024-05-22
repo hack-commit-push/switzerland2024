@@ -1,0 +1,20 @@
+# Site settings
+title: hack-commit-push
+email: organization@hack-commit-pu.sh
+description: |
+  hack.commit.push
+date: 23rd November 2024
+tagline: One Day to Contribute to Open Source
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+default_lang: "en"
+
+twitter_username: hackcommitpush
+github_username:
+github_url: https://github.com/hack-commit-push/lucerne2024/
+youtube_channel: https://www.youtube.com/channel/UCMTI7EciSV3AF_g_NjvMg0A
+linkedin_url: https://www.linkedin.com/groups/13966860/
+
+registration_link: https://hack-commit-push.devcommunity.events/event/hcp-lucerne-2024
+# Build settings
+markdown: kramdown

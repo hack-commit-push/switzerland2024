@@ -1,0 +1,27 @@
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <h2 class="section-heading">An <a rel="noopener" target="_blank" href="https://hackergarten.net/">Hackergarten <i class="fa fa-external-link" aria-hidden="true"></i></a> event</h2>
+                <hr class="light">
+                <p class="text-left" lang="fr">Développeur·se francophone ?<br />
+                Nous vous invitons à nous rejoindre pour contribuer à des projets Libres/Open Source d'envergure !<br />
+                Que ce soit des améliorations de documentation, des corrections de bugs ou l'ajout de nouvelles fonctionnalités, chaque contribution compte !</p>
+                <p class="text-left" lang="fr">L'événement est ouvert à tou·te·s, quel que soit votre niveau.<br />
+                Des ateliers d'introduction auront même lieu en début de journée pour celles et ceux qui le souhaitent.</p>
+                {% if site.registration_link %}
+                <p class="text-left" lang="fr">N'hésitez plus et <a rel="noopener" target="_blank" href="{{site.registration_link}}">inscrivez-vous <i class="fa fa-external-link" aria-hidden="true"></i></a> !</p>
+                {% endif %}
+                <hr />
+                <p class="text-left">We want to invite developers to hack together.<br />
+                Let us support Free/Open Source projects by fixing issues and adding new features and most of all learn and have fun.</p>
+                <p class="text-left">The event is open to every developer, regardless of their experience.<br />
+                We plan to have introduction workshops at the beginning of the day.</p>
+                <p class="text-left">Each contribution counts, regardless of its nature (design, documentation, code)!</p>
+                {% if site.registration_link %}
+                <p class="text-left" lang="fr"><a rel="noopener" target="_blank" href="{{site.registration_link}}">Join us now <i class="fa fa-external-link" aria-hidden="true"></i></a> !</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+#- topic: Git
+#  url: https://git-scm.com/
+#  description: Learn the basics of Git and common workflows (fork / pull requests...)
+#  trainers:
+#    - name: Agathe Vaisse
+#      profile_url: https://twitter.com/agathe_vaisse
+#      spoken_languages:
+#        - EN
+#        - FR
+#- topic: Neo4j
+#  description: Learn the fundamentals of the leading graph database Neo4j and its powerful query language Cypher
+#  trainers:
+#    - name: Michael Hunger
+#      profile_url: https://twitter.com/mesirii/
+#      spoken_languages:
+#        - EN
+#        - DE
