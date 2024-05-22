@@ -4,7 +4,7 @@ email: organization@hack-commit-pu.sh
 description: |
   hack.commit.push
 date: 23rd November 2024
-tagline: One Day to Contribute to Open Source
+tagline: One Day to Contribute</br> to Open Source
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 default_lang: "en"
