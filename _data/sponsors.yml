@@ -1,6 +1,9 @@
 - name: Java User Group Switzerland
   url: https://jug.ch
   picture: jugch.svg
+- name: Hochschule Luzern
+  url: https://www.hslu.ch
+  picture: hslu.png
 - name: Swicket
   url: https://swicket.io
   picture: swicket.svg
