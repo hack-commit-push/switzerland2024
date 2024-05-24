@@ -2,28 +2,59 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
-                <h2 class="section-heading">An <a rel="noopener" target="_blank" href="https://hackergarten.net/">Hackergarten <i class="fa fa-external-link" aria-hidden="true"></i></a> event</h2>
-                <hr class="light">
+                <h2 class="section-heading">About</h2>
 
-                <p class="text-left" lang="de">Sprichst du Deutsch?<br />
-                    Dann schliess dich uns an! Gemeinsam werden wir an frei zugänglichen Open-Source-Projekten mitwirken!<br />
-                    Sei das eine Dokumentationsverbesserung, Fehlerbehebungen oder sogar neue Funktionen, jeder Beitrag zählt!</p>
-
-                <p class="text-left" lang="de">Egal auf welchem Level du unterwegs bist, der Event steht allen offen.<br />
-
-                    Auf Wunsch finden zu Beginn des Tages auch Einführungsworkshops statt.</p>
-                {% if site.registration_link %}
-                <p class="text-left" lang="de">Zögere nicht länger und <a rel="noopener" target="_blank" href="{{site.registration_link}}">melde dich an <i class="fa fa-external-link" aria-hidden="true"></i></a>!</p>
-                {% endif %}
                 <hr />
 
-                <p class="text-left">We want to invite developers to hack together.<br />
-                Let us support Free/Open Source projects by fixing issues and adding new features and most of all learn and have fun.</p>
-                <p class="text-left">The event is open to every developer, regardless of their experience.<br />
-                We plan to have introduction workshops at the beginning of the day.</p>
-                <p class="text-left">Each contribution counts, regardless of its nature (design, documentation, code)!</p>
+                <p class="text-left" lang="de">
+                    <img src="/img/flag_de.svg" alt="German" height="16px" />
+                </p>
+
+                <p class="text-left" lang="de">
+                    Wir laden alle Eintwickler:innen ein, gemeinsam zu "hacken"!<br />
+                    Lasst uns Open Source Projekte unterstützen, indem wir Bugs beheben,
+                    neue Features einbauen und dabei vor allem viel lernen und natürlich auch Spaß haben.
+                </p>
+
+                <p class="text-left" lang="de">
+                    Unser Event steht allen offen, unabhängig von ihren Erfahrungen. Egal, auf welchem Level du unterwegs bist,
+                    jede:r ist willkommen. Auf Wunsch finden zu Beginn des Tages auch Einführungsworkshops statt.
+                </p>
+
+                <p class="text-left" lang="de">
+                    Jeder Beitrag zählt, unabhängig von seiner Art (Design, Dokumentation, Code)!
+                </p>
+
                 {% if site.registration_link %}
-                <p class="text-left" lang="de"><a rel="noopener" target="_blank" href="{{site.registration_link}}">Join us now <i class="fa fa-external-link" aria-hidden="true"></i></a>!</p>
+                    <p class="text-left" lang="de">
+                        <a rel="noopener" target="_blank" href="{{site.registration_link}}">Jetzt mitmachen <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </p>
+                {% endif %}
+
+                <hr class="light" />
+
+                <p class="text-left">
+                    <img src="/img/flag_gb.svg" alt="English" height="16px" />
+                </p>
+
+                <p class="text-left">
+                    We want to invite developers to hack together.<br />
+                    Let us support Free/Open Source projects by fixing issues
+                    and adding new features and most of all learn and have fun.
+                </p>
+
+                <p class="text-left">The event is open to every developer, regardless of their experience.<br />
+                    We plan to have introduction workshops at the beginning of the day.
+                </p>
+
+                <p class="text-left">
+                    Each contribution counts, regardless of its nature (design, documentation, code)!
+                </p>
+
+                {% if site.registration_link %}
+                    <p class="text-left" lang="de">
+                        <a rel="noopener" target="_blank" href="{{site.registration_link}}">Join us now <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </p>
                 {% endif %}
             </div>
         </div>
