@@ -11,10 +11,10 @@ default_lang: "en"
 
 twitter_username: hackcommitpush
 github_username:
-github_url: https://github.com/hack-commit-push/lucerne2024/
+github_url: https://github.com/hack-commit-push/switzerland2024/
 youtube_channel: https://www.youtube.com/channel/UCMTI7EciSV3AF_g_NjvMg0A
 linkedin_url: https://www.linkedin.com/groups/13966860/
 
-registration_link: https://hack-commit-push.devcommunity.events/event/hcp-lucerne-2024
+registration_link: https://hack-commit-push.devcommunity.events/event/hcp-switzerland-2024
 # Build settings
 markdown: kramdown
