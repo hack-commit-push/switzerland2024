@@ -282,6 +282,9 @@ header .header-content {
 }
 
 #team, #sponsors {
+	img {
+		filter: grayscale(100%);
+	}
 
 	.grid_item {
 		text-align: center;

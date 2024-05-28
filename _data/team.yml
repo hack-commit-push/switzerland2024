@@ -8,3 +8,8 @@ core:
     profile_url: https://fosstodon.org/McPringle
     picture: marcus.png
     short_desc: Scrum Master at Adcubum
+
+  - name: Ruedi
+    profile_url: https://ruedi-arnold.com/
+    picture: ruedi.png
+    short_desc: Professor at HSLU
