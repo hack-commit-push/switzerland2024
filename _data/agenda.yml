@@ -10,6 +10,10 @@
   end: "12:45"
   description: Start your contributions or training
   icon: laptop
+- start: "12:45"
+  end: "13:45"
+  description: Lunch
+  icon: hamburger
 - start: "13:45"
   end: "17:00"
   description: Time to contribute again!
