@@ -21,7 +21,7 @@
 - start: "17:00"
   end: "18:00"
   description: Listen to the recap, win one of the raffle prizes and stay for the Apero!
-  icon: glass
+  icon: wine-glass
 - start: "18:00"
   end: "20:00"
   description: Apero
