@@ -24,15 +24,6 @@
 #  contributions: #links to contributions (once the event is done)
 #   - https://example.com/my/contribution # can be a commit, a pull/merge request...
 
-- name: JReleaser
-  url: https://jreleaser.org/
-  description: JReleaser is a release automation tool. Its goal is to simplify creating releases and publishing artifacts to multiple package managers while providing customizable options.
-  leads:
-    - name: Andres Almiray
-      spoken_languages:
-        - EN
-        - ES
-  contributions:
 - name: AssertJ
   url: https://assertj.github.io/doc/
   description: AssertJ is a Java library that provides a rich set of assertions and truly helpful error messages, improves test code readability, and is designed to be super easy to use within your favorite IDE.
@@ -42,3 +33,12 @@
       spoken_languages:
         - EN
         - IT
+- name: JReleaser
+  url: https://jreleaser.org/
+  description: JReleaser is a release automation tool. Its goal is to simplify creating releases and publishing artifacts to multiple package managers while providing customizable options.
+  leads:
+    - name: Andres Almiray
+      spoken_languages:
+        - EN
+        - ES
+  contributions:
