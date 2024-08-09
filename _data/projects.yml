@@ -42,3 +42,12 @@
         - EN
         - ES
   contributions:
+- name: Alf.io
+  url: https://github.com/alfio-event/alf.io
+  description: The open source ticket reservation system for conferences, trade shows, workshops, meetups.
+  leads:
+    - name: Celestino Bellone
+      profile_url: https://github.com/cbellone
+      spoken_languages:
+        - EN
+        - IT
