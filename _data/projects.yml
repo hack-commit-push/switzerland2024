@@ -51,3 +51,13 @@
       spoken_languages:
         - EN
         - IT
+
+- name: OpenJDK Mission Control
+  url: https://github.com/openjdk/jmc
+  description: The Java (OpenJDK) tools suite for profiling and diagostics.
+  leads:
+    - name: Marcus Hirt
+      profile_url: https://github.com/thegreystone
+      spoken_languages:
+        - EN
+        - SE
