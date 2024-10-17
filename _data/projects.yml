@@ -61,3 +61,28 @@
       spoken_languages:
         - EN
         - SE
+
+- name: JUnit
+  url: https://junit.org
+  description: The programmer-friendly testing framework for Java and the JVM.
+  leads:
+    - name: Sam Brannen
+      profile_url: https://github.com/sbrannen
+      spoken_languages:
+        - DE
+        - EN
+    - name: Marc Philipp
+      profile_url: https://github.com/marcphilipp
+      spoken_languages:
+        - DE
+        - EN
+    - name: Juliette de Rancourt
+      profile_url: https://github.com/juliette-derancourt
+      spoken_languages:
+        - EN
+        - FR
+    - name: Christian Stein
+      profile_url: https://github.com/sormuras
+      spoken_languages:
+        - DE
+        - EN
