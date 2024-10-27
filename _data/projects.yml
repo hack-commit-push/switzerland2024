@@ -29,7 +29,7 @@
   description: AssertJ is a Java library that provides a rich set of assertions and truly helpful error messages, improves test code readability, and is designed to be super easy to use within your favorite IDE.
   leads:
     - name: Stefano Cordio
-      profile_url: https://twitter.com/stefanocodes
+      profile_url: https://github.com/scordio
       spoken_languages:
         - EN
         - IT
