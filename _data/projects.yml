@@ -86,3 +86,13 @@
       spoken_languages:
         - DE
         - EN
+
+- name: Spring Batch Extensions
+  url: https://github.com/spring-projects/spring-batch-extensions
+  description: The Spring Batch Extensions project provides extension modules for Spring Batch.
+  leads:
+    - name: Stefano Cordio
+      profile_url: https://github.com/scordio
+      spoken_languages:
+        - EN
+        - IT
