@@ -54,7 +54,7 @@
 
 - name: OpenJDK Mission Control
   url: https://github.com/openjdk/jmc
-  description: The Java (OpenJDK) tools suite for profiling and diagostics.
+  description: The Java (OpenJDK) tools suite for profiling and diagnostics.
   leads:
     - name: Marcus Hirt
       profile_url: https://github.com/thegreystone
