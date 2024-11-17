@@ -69,8 +69,8 @@
     - name: Sam Brannen
       profile_url: https://github.com/sbrannen
       spoken_languages:
-        - DE
         - EN
+        - DE
     - name: Marc Philipp
       profile_url: https://github.com/marcphilipp
       spoken_languages:
@@ -96,3 +96,13 @@
       spoken_languages:
         - EN
         - IT
+
+- name: Spring Framework
+  url: https://spring.io/projects/spring-framework
+  description: The Spring Framework is a comprehensive, open-source framework for Java-based enterprise applications.
+  leads:
+    - name: Sam Brannen
+      profile_url: https://github.com/sbrannen
+      spoken_languages:
+        - EN
+        - DE
