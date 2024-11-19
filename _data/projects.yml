@@ -87,9 +87,9 @@
         - DE
         - EN
 
-- name: Spring Batch Extensions
-  url: https://github.com/spring-projects/spring-batch-extensions
-  description: The Spring Batch Extensions project provides extension modules for Spring Batch.
+- name: Spring Batch Notion
+  url: https://github.com/spring-projects/spring-batch-extensions/tree/main/spring-batch-notion
+  description: A Spring Batch extension module for Notion.
   leads:
     - name: Stefano Cordio
       profile_url: https://github.com/scordio
