@@ -33,6 +33,9 @@
       spoken_languages:
         - EN
         - IT
+  contributions:
+    - https://github.com/assertj/assertj/pull/3673
+
 - name: JReleaser
   url: https://jreleaser.org/
   description: JReleaser is a release automation tool. Its goal is to simplify creating releases and publishing artifacts to multiple package managers while providing customizable options.
@@ -42,6 +45,7 @@
         - EN
         - ES
   contributions:
+
 - name: Alf.io
   url: https://github.com/alfio-event/alf.io
   description: The open source ticket reservation system for conferences, trade shows, workshops, meetups.
@@ -51,6 +55,8 @@
       spoken_languages:
         - EN
         - IT
+  contributions:
+    - https://github.com/alfio-event/alf.io/pull/1430
 
 - name: OpenJDK Mission Control
   url: https://github.com/openjdk/jmc
@@ -106,3 +112,6 @@
       spoken_languages:
         - EN
         - DE
+  contributions:
+    - https://github.com/spring-projects/spring-framework/pull/33949
+    - https://github.com/spring-projects/spring-framework/pull/33950
